@@ -1,11 +1,14 @@
 import React, { useState } from 'react'
 import './style.scss';
+import { addTodoAction } from '../../actions';
+import { useDispatch } from 'react-redux';
 
-const AddTodo = ({addTodoAction}) => {
+const AddTodo = () => {
   const [txt, setTxt] = useState('');
-
+  const dispatch = useDispatch();
+  
   const handleInsertTodo = () => {
-    addTodoAction(txt);
+    dispatch(addTodoAction(txt));
     setTxt('');
   }
 
