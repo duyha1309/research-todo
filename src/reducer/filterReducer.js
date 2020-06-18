@@ -1,6 +1,6 @@
 const { FILTER_TODO } = require("../constants/actionType");
 
-const filterReducer = (state, action) => {
+const filterReducer = (state = 'all', action) => {
   switch(action.type) {
     case FILTER_TODO:
       return action.payload;

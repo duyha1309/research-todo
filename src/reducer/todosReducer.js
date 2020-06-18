@@ -1,7 +1,7 @@
 import { ADD_TODO, REMOVE_TODO, TOGGLE_TODO, FETCH_TODO } from "../constants/actionType";
 import uuid from 'react-uuid';
 
-const todosReducer = (state, action) => {
+const todosReducer = (state = [], action) => {
   switch(action.type) {
     case FETCH_TODO:
       return action.payload;

@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import './style.scss';
 
-const AddTodo = ({handleAdd}) => {
+const AddTodo = ({addTodoAction}) => {
   const [txt, setTxt] = useState('');
 
   const handleInsertTodo = () => {
-    handleAdd(txt);
+    addTodoAction(txt);
     setTxt('');
   }
 
