@@ -1,0 +1,18 @@
+.filter-todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  margin: auto;
+  & .btn {
+    margin-right: 10px;
+    transition: all .35s;
+    &.active,
+    &:hover {
+      background-color: green;
+      color: #fff;
+    }
+  }
+  
+}

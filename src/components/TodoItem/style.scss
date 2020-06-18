@@ -1,0 +1,33 @@
+.todo-item {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.toggle-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.content {
+  flex: 1;
+}
+.remove-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+  cursor: pointer;
+  transition: all .35s;
+  border: 1px solid #ccc;
+
+  &:hover {
+    color: #fff;
+    background-color: green;
+  }
+}

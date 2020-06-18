@@ -1,0 +1,38 @@
+.add-todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 800px;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 1;
+}
+.form-label {
+  width: 100px;
+  margin-right: 15px;
+}
+.form-control {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+}
+.btn {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  outline: none;
+  &-add {
+    margin-left: 20px;
+    width: 100px;
+  }
+}
